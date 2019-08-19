@@ -1,0 +1,25 @@
+git init:初始化本地仓库
+git remote add origin git@github.com:Herscon/MyGitStudy.git:连接远程仓库
+git remote -v:查看连接情况
+git status:查看仓库状态
+git add 文件名/文件夹:将修改的内容添加到暂存区，等待被提交
+git add .:使用工作区的所有文件覆盖暂存区，等待被提交
+git checkout .:使用暂存区的文件覆盖工作区
+git checkout <分支名>:切换分支
+git commit -m '您的提交信息(附加的)':将暂存区内容附加一个提交信息提交到历史内容区等待被推送到远程仓库
+git pull origin <远程分支>：<本地分支>:将远程分支拉取到指定本地分支(同步)
+git pull origin <远程分支>:将远程分支拉到本地相同分支(当前分支与远程分支相同)
+git pull:拉取所有远程分支的新版本"坐标"，并同步当前分支的本地代码
+git push origin <本地分支>:<远程分支>:将本地分支推送到origin主机的远程分支
+git push -u origin master:将本地的master分支推送到origin主机，同时指定origin为默认主机
+git push --all origin:将本地的所有分支都推送到远程主机
+git push:有默认主机下使用
+git branch:查看本地分支
+git branch -r:查看远程分支
+git branch -a:查看本地和远程的所有分支
+git rm -r --cached 文件/文件夹:递归删除暂存区或分支上的文件/文件夹，本地继续使用
+git rm 文件/文件夹:删除暂存区或分支上的文件/文件夹，本地不继续使用
+git reset --hard origin/分支:从远程仓库的分支把代码取回来，然后覆盖本地仓库、本地暂存区和工作区
+git reset:将当前HEAD重置为指定状态  
+git reset --hard:重置暂存区和工作区。自<commit>以来对工作树中跟踪文件的任何更改都将被丢弃。
+git log:查看提交区
